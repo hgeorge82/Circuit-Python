@@ -426,8 +426,8 @@ The goal of this assignment is to get an rgb led to work with class modules. Thi
 
 
 ## Evidence
-
-
+![Wiring](https://github.com/hgeorge82/Circuit-Python2/blob/main/rgb%20wiring.png)
+![Gif of Blinky and "Alternate"](https://github.com/hgeorge82/Circuit-Python2/blob/main/rgb%20led%20gif.gif)
 
 
 
