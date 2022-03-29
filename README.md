@@ -10,7 +10,7 @@ Main Code:
 
 import time
 import board
-from rgb import LED   # import the LED class from the rgb module
+from RGB import LED   # import the LED class from the RGB module
 
 blueLEDPin = board.D10
 redLEDPin = board.D8
@@ -73,16 +73,16 @@ class LED:      # It's propper coding to always write a line explaining a class
         lightBulb.value = 65535
 
 
-    def off(self): # "off" means duty cycle should be full.
+    def off(self): # "off" means the duty cycle should be full.
         self.led.duty_cycle = 65535
 
 
 
 class RGB:
-    '''this class should impliment all 3 pins together to control an RGB LED'''
-    from rgb import LED
+    '''this class should implement all 3 pins together to control an RGB LED'''
+    from RGB import LED
         # Let's take a second to appreciate that we're using a class to call a class!
-        # Let LED do all the nitty gritty work, this RGB class will be the "manager"
+        # Let LED do all the nitty-gritty work, this RGB class will be the "manager"
 
 
     def __init__(self, redPin, greenPin, bluePin):
@@ -142,7 +142,7 @@ class RGB:
 
     def off(self):
         # This turns off all 3 LEDs, but my LEDs were still glowing a tiny bit.
-        # To fix this, i took the RGB power wire out of 5V , and plugged it into D13.
+        # To fix this, I took the RGB power wire out of 5V and plugged it into D13.
         # Now when I want the LED to be off, it's truly off!
         self.myBlueLED.off()
         self.myGreenLED.off()
@@ -151,7 +151,7 @@ class RGB:
 
 
 # Overview of assignment
-The goal of this assignment is to get an rgb led to fade using classes. Overall I think the assignment was easy once I got the hang of it. I had a few problems with the code. Lines of code wouldn't correspond with the class.py or the main.py and the fade function never worked. In order to solve this problem I asked around for help until Miriam helped solve the problem. 
+The goal of this assignment is to get an RGB led to fade using classes. Overall I think the assignment was easy once I got the hang of it. I had a few problems with the code. Lines of code wouldn't correspond with the class.py or the main.py and the fade function never worked. In order to solve this problem, I asked around for help until Miriam helped solve the problem. 
 
 
 
@@ -262,16 +262,16 @@ class LED:      # It's propper coding to always write a line explaining a class
         lightBulb.value = 65535
 
 
-    def off(self): # "off" means duty cycle should be full.
+    def off(self): # "off" means the duty cycle should be full.
         self.led.duty_cycle = 65535
 
 
 
 class RGB:
-    '''this class should impliment all 3 pins together to control an RGB LED'''
-    from rgb import LED
+    '''this class should implement all 3 pins together to control an RGB LED'''
+    from RGB import LED
         # Let's take a second to appreciate that we're using a class to call a class!
-        # Let LED do all the nitty gritty work, this RGB class will be the "manager"
+        # Let LED do all the nitty-gritty work, this RGB class will be the "manager"
 
 
     def fadeup(self):  # Fades LED from dim to bright
@@ -414,7 +414,7 @@ class RGB:
 
     def off(self):
         # This turns off all 3 LEDs, but my LEDs were still glowing a tiny bit.
-        # To fix this, i took the RGB power wire out of 5V , and plugged it into D13.
+        # To fix this, I took the RGB power wire out of 5V and plugged it into D13.
         # Now when I want the LED to be off, it's truly off!
         self.myBlueLED.off()
         self.myGreenLED.off()
@@ -422,7 +422,7 @@ class RGB:
         lightBulb.value = 0
 
 # Overview of assignment
-The goal of this assignment is to get an rgb led to work with class modules. This assignment was easy as well since basically all we needed to do was copy and paste code. Although we need to create our own functions. I created the function Blinky and Alternate. Alternate never worked for some reason. I soon came to realize that the rgb leds were alternating without the alternate function, whcih is why I commented it out in main. I think my code is broken because it still works even though I didn't call it
+The goal of this assignment is to get an RGB led to work with class modules. This assignment was easy as well since basically all we needed to do was copy and paste code. Although we need to create our own functions. I created the function Blinky and Alternate. Alternate never worked for some reason. I soon came to realize that the RGB LEDs were alternating without the alternate function, which is why I commented it out in the main. I think my code is broken because it still works even though I didn't call it
 
 
 ## Evidence
