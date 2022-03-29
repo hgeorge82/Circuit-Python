@@ -422,7 +422,7 @@ class RGB:
         lightBulb.value = 0
 
 # Overview of assignment
-The goal of this assignment is to get an RGB led to work with class modules. This assignment was easy as well since basically all we needed to do was copy and paste code. Although we need to create our own functions. I created the function Blinky and Alternate. Alternate never worked for some reason. I soon came to realize that the RGB LEDs were alternating without the alternate function, which is why I commented it out in the main. I think my code is broken because it still works even though I didn't call it
+The goal of this assignment is to get an RGB led to work with class modules. This assignment was easy as well since basically all we needed to do was copy and paste code. Although we need to create our own functions. I created the function Blinky and Alternate. Alternate never worked for some reason. I soon came to realize that the RGB LEDs were alternating without the alternate function, which is why I commented it out in the main. I think my code is broken because it still works even though I didn't call it.
 
 
 ## Evidence
